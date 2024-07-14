@@ -34,6 +34,7 @@
   },
   "name":"PirateJam2024",
   "resources":[
+    {"id":{"name":"Object1testing","path":"objects/Object1testing/Object1testing.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
