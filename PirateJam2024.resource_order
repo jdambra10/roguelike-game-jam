@@ -1,4 +1,10 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"PlayerObj","order":1,"path":"objects/PlayerObj/PlayerObj.yy",},
+    {"name":"PotionObj","order":3,"path":"objects/PotionObj/PotionObj.yy",},
+    {"name":"SlimeObj","order":2,"path":"objects/SlimeObj/SlimeObj.yy",},
+    {"name":"PotionSprite","order":2,"path":"sprites/PotionSprite/PotionSprite.yy",},
+    {"name":"SlimeSprite","order":1,"path":"sprites/SlimeSprite/SlimeSprite.yy",},
+  ],
 }
