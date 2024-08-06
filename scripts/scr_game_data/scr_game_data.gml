@@ -23,6 +23,35 @@ enum ENEMY_POOL {
 
 
 
+/* Player Data
+Parameter Reference Chart:
+name: Name of Mob
+hp: CURRENT health value
+hpMax: maximum health value
+speed: how fast the mob moves
+weakness: elemental or weapon weakness
+resistance: elemental or weapon resistance (Tier 2 & 3 only)
+sprites: sprite and default animation to use
+actions: special attacks the enemy can use
+AIscript: enemy AI for attacking and movement
+*/
+global.player =
+{
+	player:
+	{
+		name: "Hero",
+		hp: 30,
+		hpMax: 30,
+		speed: 3,
+		element: ELEMENTAL_VALUE.NONE,
+		weakness: ELEMENTAL_VALUE.NONE,
+		sprites: {idle: PlayerSprite},
+		actions: []
+	}
+}
+
+
+
 /* Enemy Data
 Parameter Reference Chart:
 name: Name of Mob
@@ -45,7 +74,7 @@ global.tier_1_enemies =
 		xpValue: 10,
 		speed: 10,
 		weakness: ELEMENTAL_VALUE.NONE,
-		sprites: {idle: spr_enemy},
+		sprites: {idle: SlimeSprite},
 		actions: [],
 		AIscript: function()
 		{
@@ -65,7 +94,7 @@ global.tier_2_enemies =
 		speed: 15,
 		weakness: ELEMENTAL_VALUE.NONE,
 		resistance: ELEMENTAL_VALUE.NONE,
-		sprites: {idle: spr_enemy},
+		sprites: {idle: SlimeSprite},
 		actions: [],
 		AIscript: function()
 		{
@@ -85,7 +114,7 @@ global.tier_3_enemies =
 		speed: 15,
 		weakness: ELEMENTAL_VALUE.NONE,
 		resistance: ELEMENTAL_VALUE.NONE,
-		sprites: {idle: spr_enemy},
+		sprites: {idle: SlimeSprite},
 		actions: [],
 		AIscript: function()
 		{
@@ -108,6 +137,7 @@ s_door: toggle bool of south door
 e_door: toggle bool of east door
 w_door: toggle bool of west door
 */
+/*
 global.room_templates =
 {
 	spawn_room_1:
@@ -149,6 +179,7 @@ global.room_templates =
 		w_door: false
 	}
 }
+*/
 
 
 
@@ -164,6 +195,7 @@ s_door: toggle bool of south door
 e_door: toggle bool of east door
 w_door: toggle bool of west door
 */
+/*
 global.normal_floor_templates =
 {
 	floor_1:
@@ -175,9 +207,10 @@ global.normal_floor_templates =
 		spawn_e_door: struct_set(global.room_templates.spawn_room_1, "e_door", false),
 		spawn_w_door: struct_set(global.room_templates.spawn_room_1, "w_door", false),
 		room_a_spawn_x: 0,
-		room_a_spawn_y: 401,
-		room_a_n_door: function {
-		struct_names_count()	
-		}
+		room_a_spawn_y: 401
+		//room_a_n_door: function {
+		//struct_names_count()	
+		//}
 	}
 }
+*/
