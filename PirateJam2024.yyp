@@ -40,6 +40,7 @@
     {"id":{"name":"SlimeObj","path":"objects/SlimeObj/SlimeObj.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_game_data","path":"scripts/scr_game_data/scr_game_data.yy",},},
+    {"id":{"name":"BaseFloorSprite","path":"sprites/BaseFloorSprite/BaseFloorSprite.yy",},},
     {"id":{"name":"PlayerSprite","path":"sprites/PlayerSprite/PlayerSprite.yy",},},
     {"id":{"name":"PotionSprite","path":"sprites/PotionSprite/PotionSprite.yy",},},
     {"id":{"name":"SlimeSprite","path":"sprites/SlimeSprite/SlimeSprite.yy",},},
