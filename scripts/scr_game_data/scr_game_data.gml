@@ -47,6 +47,14 @@ global.player =
 		weakness: ELEMENTAL_VALUE.NONE,
 		sprites: {idle: PlayerSprite},
 		actions: []
+	},
+	
+	potion_atk:
+	{
+		speed: 1,
+		fire_rate: 1,
+		element: ELEMENTAL_VALUE.NONE,
+		damage: 5
 	}
 }
 

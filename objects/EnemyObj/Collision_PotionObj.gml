@@ -1,0 +1,1 @@
+Slime.hp = Slime.hp - global.player.potion_atk.damage;
